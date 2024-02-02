@@ -5,12 +5,12 @@ import ListEmployeeComponent from './components/ListEmployeeComponent'
 import FooterComponent from './components/FooterComponent'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import EmployeeComponent from './components/EmployeeComponent'
-
+//Comentario para hacer la rama
 function App() {
   
   return (
     <>
-    <BrowserRouter>
+    
     <HeaderComponent/>
     <Routes>
       <Route path='/' element={<ListEmployeeComponent/>}></Route>
@@ -18,7 +18,7 @@ function App() {
       <Route path='/add-employee' element = { <EmployeeComponent/>}></Route>
       </Routes>
     <FooterComponent/> 
-    </BrowserRouter>
+   
     </>
   )
 }
